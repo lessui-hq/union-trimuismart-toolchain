@@ -12,7 +12,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: sprinters:aws:ubuntu-24.04-arm:c7gd.xlarge
     permissions:
       contents: read
       packages: write
