@@ -8,7 +8,7 @@ locale-gen
 cd ~
 
 BUILDROOT_VERSION=buildroot-2016.05
-wget https://buildroot.org/downloads/$BUILDROOT_VERSION.tar.gz
+# buildroot tarball is pre-downloaded via multi-stage Docker build
 tar -xf ./$BUILDROOT_VERSION.tar.gz
 rm -f ./$BUILDROOT_VERSION.tar.gz
 mv ./$BUILDROOT_VERSION ./buildroot
